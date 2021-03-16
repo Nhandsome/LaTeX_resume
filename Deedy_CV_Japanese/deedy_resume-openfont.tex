@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{韓}{範錫}{
+ハン　　　ボム　ソク\\
+\urlstyle{same}\href{mailto:han.beom.seok.707@s.kyushu-u.ac.jp}{han.beom.seok.707@s.kyushu-u.ac.jp}\\
+\href{https://nhandsome.github.io/}{nhandsome.github.io} |  \href{https://www.linkedin.com/in/beomseok-han/}{linkedin.com/in/beomseok-han}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\begin{minipage}[t]{0.44\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{学歴} 
+
+\subsection{九州大学　| 日本}
+\descript{大学院システム情報科学府・修士}
+\location{2020年4月 - 2022年3月（見込み）}
+情報学専攻・自然言語処理研究室\\
+データサイエンスコース
+\sectionsep
+
+\subsection{弘益大学　| 韓国}
+\descript{情報・コンピューターエンジニアリング・学士}
+\location{2008年3月 - 2015年2月}
+インダストリアルエンジニアリング専攻\\
+\location{ Cum. GPA: 4.01 / 4.5}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{スキル}
+\subsection{プログラミング}
+Python3 \textbullet{} Jupyter Notebook \textbullet{} Selenium \textbullet{} \\Java \textbullet{} Javascript \textbullet{} Pytorch  \textbullet{} Tensorflow \\
+\sectionsep
+
+\subsection{語学}
+日本語 : Advanced (JLPT N1)\\
+英　語 : Intermediate (TOEIC L/R 805点)\\
+韓国語 : Native
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{対外活動}
+
+\runsubsection{ヨーロッパ自転車旅}
+\descript{| チャレンジ }
+\location{2014年4月 - 2014年6月 | 欧州}
+\vspace{\topsep}
+\begin{tightemize}
+\item \textbf{\href{https://nhandsome.github.io/daily/2020/09/17/daily-bicycle-INTRO/}{自転車とテントだけで挑戦した独り旅}}
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Handium}
+\descript{| インターンシップ }
+\location{2013年10月 - 2014年3月 | 韓国}
+\begin{tightemize}
+\item \textbf{\href{https://handium.co.kr/}{カフェ関連スタートアップ}}の商品企画チーム
+\item レディ・トゥ・ドリンクやコーヒー新商品企画
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Global Citizens Youth Assembly}
+\descript{| 国際フォーラム }
+\location{2012年4月 - 2012年10月 | 韓国・インド}
+\begin{tightemize}
+\item 持続可能な開発・教育関連の青少年フォーラム
+\item 韓国経済チーム
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{韓国軍隊}
+\descript{| 兵役 }
+\location{2009年10月 - 2011年7月 | 韓国}
+\begin{tightemize}
+\item コンピュータ・通信兵
+\item 軍隊内のウェブサイト・ネットワーク運用
+\end{tightemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.55\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{研究活動}
+\runsubsection{自然言語処理 (NLP)}\\
+\location{2020年10月 – 現在 | 九州大学}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item アジア言語のようなLow-Resource Languageに関する
+Cross-lingual Word Embedding(CWE)研究
+\item 多言語CWEモデルを通じCWEの性能改善させ、単語レベル
+翻訳やNLPのDownStream性能を向上することが目標
+\item Pytorchベースの教師あり・無し（敵対的学習)学習
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{データサイエンス}
+\descript{| 学校・地域企業合同プロジェクト}
+\location{2020年10月 – 2021年2月 | 九州大学}
+\begin{tightemize}
+\item 九州大学主催の\textbf{\href{https://ads.i.kyushu-u.ac.jp/archives/1642}{データ解析PBL成果報告シンポジウム}}
+\item 企業の現場ニーズ分析やデータ解析作業に貢献
+\item 幼児の足裏スキャン画像からのアーチ形成度の自動判定を
+テーマとし、CNN学習・統計的可視化を実現
+\end{tightemize}
+\sectionsep
+
+% Led the development of \textbf{QuickTongue}, the firs \textbf{\href{https://ads.i.kyushu-u.ac.jp/archives/1642}{Data Science PBL symposium}} to aid in 
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TECHNICAL EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{職歴}
+\runsubsection{Samsung SDS}
+\descript{| Software Engineering }
+\location{2015年3月 - 2018年3月 | 韓国}
+\sectionsep
+
+\descript{FIREWALL POLICY MANAGEMENT SYSTEM PROJECT}
+\location{2016年10月 - 2018年3月}
+\begin{tightemize}
+\item 全社Firewall運用を統合・半自動化させる管理システム開発
+プロジェクト
+\item アップデート機能のテスト・適用作業及びシステム運用担当
+\item Java, Javascript, Jira, Git
+\end{tightemize}
+\sectionsep
+
+\descript{AMWAY KOREA WEBSITE INTEGRATION PROJECT}
+\location{2016年3月 - 2016年10月}
+\begin{tightemize}
+\item レガシーウェブサイトとオンラインモールの総合・モバイル
+システム開発プロジェクト
+\item テスト自動化やIssue管理を通じた品質管理サポート担当
+\item Selenium, Javascript
+\end{tightemize}
+\sectionsep
+
+\descript{QUALITY ASSURANCE}
+\location{2015年3月 - 2016年3月}
+\begin{tightemize}
+\item Issueプロジェクトを集中管理・サポートする全社組織
+\item Unit・Functionalテストサポート及び役員向けの報告資料
+作成担当
+\item Selenium, MS PowerPoint
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
