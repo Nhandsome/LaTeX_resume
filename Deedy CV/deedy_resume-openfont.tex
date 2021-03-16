@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \namesection{Beomseok}{Han}{ \urlstyle{same}\href{mailto:han.beom.seok.707@s.kyushu-u.ac.jp}{han.beom.seok.707@s.kyushu-u.ac.jp}\\
+%  \hfill
+% \includegraphics[width=2.8cm]{images/gr.png}
+
+% \href{https://nhandsome.github.io/}{https://nhandsome.github.io} |  \href{https://www.linkedin.com/in/beomseok-han/}{linkedin.com/in/beomseok-han/}
+% }
+
+\namesection{Beomseok}{Han}{ \urlstyle{same}\href{mailto:han.beom.seok.707@s.kyushu-u.ac.jp}{han.beom.seok.707@s.kyushu-u.ac.jp}\\
+\href{https://nhandsome.github.io/}{https://nhandsome.github.io} |  \href{https://www.linkedin.com/in/beomseok-han/}{linkedin.com/in/beomseok-han/}
+} 
+% {
+%     \hfill
+%     \includegraphics[width=2.8cm]{images/gr.png}
+% }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sectionsep
+\begin{minipage}[t]{0.44\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Kyushu University}
+\descript{Master's Course in Informatics}
+\location{Apr 2020 - Present | Japan}
+Graduate School of Information Science\\
+Minor : Data Science Course
+\sectionsep
+
+\subsection{Hongik University}
+\descript{Bachelor in Industrial Engineering}
+\location{Graduated Feb 2015 | Korea}
+School of Information and Computer Engineering \\
+\location{ Cum. GPA: 4.01 / 4.5}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skill}
+\subsection{Programming}
+Python3 \textbullet{} Jupyter Notebook \textbullet{} Selenium \textbullet{} \\Java \textbullet{} Javascript \textbullet{} Pytorch  \textbullet{} Tensorflow \\
+\sectionsep
+
+\subsection{Languages}
+Korean : Native \\
+Japanese : Advanced (JLPT N1)\\
+English : Intermediate (TOEIC 805)\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{BICYCLE TRAVELING}
+\descript{| Challenge }
+\location{Apr 2014 - Jun 2014 | Europe}
+\vspace{\topsep}
+\begin{tightemize}
+\item \textbf{\href{https://nhandsome.github.io/daily/2020/09/17/daily-bicycle-INTRO/}{Traveling 10 European countries}} with Just tent and bicycle
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Handium}
+\descript{| Product Planning Intern }
+\location{Oct 2013 - Mar 2014 | Korea}
+\begin{tightemize}
+\item \textbf{\href{https://handium.co.kr/}{Start-up company specializing in cafe}}
+\item Planning RTD coffee beverages and beans
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Global Citizens Youth Assembly}
+\descript{| International Forum }
+\location{Apr 2012 - Oct 2012 | Korea, India}
+\begin{tightemize}
+\item Research activities for Sustainable Development(SD) and Education of SD
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Republic of Korea Army}
+\descript{| Military }
+\location{Oct 2009 - Jul 2011 | Korea}
+\begin{tightemize}
+\item Computer Technician
+\item Operating website / network of 6 Division
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.55\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research Activity}
+\runsubsection{Natural Language Processing (NLP)}\\
+\location{Oct 2020 – Present | Kyushu Univ.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Research about Cross-lingual Word Embedding(CWE) for low-resource language
+\item Improving performance of word-base translation and NLP downstream through the refinement of CWE
+\item Supervised / Unsupervised(GAN) learning Using Pytorch
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{Data Science}
+\descript{| Company cooperate project}
+\location{Oct 2020 – Feb 2021 | Kyushu Univ.}
+\begin{tightemize}
+\item \textbf{\href{https://ads.i.kyushu-u.ac.jp/archives/1642}{Data Science PBL symposium}} held in cooperation with Kyushu local company
+\item Automatic determination of flat foot from infant foot scan images Using CNN and Statistic Analysis
+\end{tightemize}
+\sectionsep
+
+% Led the development of \textbf{QuickTongue}, the firs \textbf{\href{https://ads.i.kyushu-u.ac.jp/archives/1642}{Data Science PBL symposium}} to aid in 
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TECHNICAL EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Experience}
+\runsubsection{Samsung SDS}
+\descript{| Software Engineering }
+\location{Mar 2015 - Mar 2018 | Korea}
+\sectionsep
+
+\descript{FIREWALL POLICY MANAGEMENT SYSTEM PROJECT}
+\location{Oct 2016 - Mar 2018}
+\begin{tightemize}
+\item Development management system for integrate and semi-automate enterprise firewall operations
+\item Test and Apply updated functions and Management overall system operation
+\item Java, Javascript, Jira, Git
+\end{tightemize}
+\sectionsep
+
+\descript{AMWAY KOREA WEBSITE INTEGRATION PROJECT}
+\location{Mar 2016 - Oct 2016}
+\begin{tightemize}
+\item Integration Legacy website / Online shopping mall and Development Mobile environment
+\item Management software quality assurance by Conducting test automation and issue management
+\item Selenium, Javascript
+\end{tightemize}
+\sectionsep
+
+\descript{QUALITY ASSURANCE}
+\location{Mar 2015 - Feb 2016}
+\begin{tightemize}
+\item Support Issue projects as a member of Enterprise Quality Assurance Team
+\item Conduct Unit/Functional test and Report preparation for CEO meeting
+\item Selenium, MS PowerPoint
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
