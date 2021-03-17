@@ -28,3 +28,6 @@ There are 2 versions of LaTeX resume Form
 {\includegraphics[width=30mm,keepaspectratio]{images/gr.eps}}}
 }
 ```
+
+##License
+This work is developed based on [Deedy-Resume](https://github.com/deedy/Deedy-Resume)
