@@ -29,5 +29,5 @@ There are 2 versions of LaTeX resume Form
 }
 ```
 
-##License
+## License
 This work is developed based on [Deedy-Resume](https://github.com/deedy/Deedy-Resume)
