@@ -14,3 +14,17 @@ There are 2 versions of LaTeX resume Form
 1. Download files (En or Ja)
 2. Sign in [OverLeaf Website](https://www.overleaf.com/project) and Upload files
 3. Edit the contents and save as pdf
+
+- CV for japanese needed to insert photo
+  - edit from deedy-resume-openfont.cls file
+  - If you don't need to insert photo file, delete 
+```
+\newcommand\photo[1]{\AtPageUpperLeft{%
+ \put(\LenToUnit{17.5cm},\LenToUnit{-4.2cm}){#1}%
+ }}%
+
+\AddToShipoutPictureBG*{%
+\photo{\fboxsep1.5pt\fcolorbox{white}{white}%
+{\includegraphics[width=30mm,keepaspectratio]{images/gr.eps}}}
+}
+```
