@@ -12,6 +12,7 @@
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
+\usepackage{eso-pic}
 
 % Publications
 \usepackage{cite}
@@ -19,25 +20,36 @@
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor} 
-\definecolor{date}{HTML}{666666} 
+% \definecolor{date}{HTML}{666666} 
 \definecolor{primary}{HTML}{2b2b2b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
+
+%
+\newcommand\photo[1]{\AtPageUpperLeft{%
+ \put(\LenToUnit{17.5cm},\LenToUnit{-4.2cm}){#1}%
+ }}%
+
+\AddToShipoutPictureBG*{%
+\photo{\fboxsep1.5pt\fcolorbox{white}{white}%
+{\includegraphics[width=30mm,keepaspectratio]{images/gr.eps}}}
+}
+
 
 % Set main fonts
 \usepackage{fontspec}
 \setmainfont[Color=primary, Path = fonts/Serif/,BoldItalicFont=SourceHanSerif-Bold,BoldFont=SourceHanSerif-Medium,ItalicFont=SourceHanSerif-Regular]{SourceHanSerif-ExtraLight}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/Serif/]{SourceHanSerif-ExtraLight}
 
-% Date command
-\usepackage[absolute]{textpos}
-\usepackage[UKenglish]{isodate}
-\setlength{\TPHorizModule}{1mm}
-\setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
-\end{textblock}}
+% % Date command
+% \usepackage[absolute]{textpos}
+% \usepackage[UKenglish]{isodate}
+% \setlength{\TPHorizModule}{1mm}
+% \setlength{\TPVertModule}{1mm}
+% \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
+% \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+% Last Updated on \today
+% \end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{
@@ -49,7 +61,7 @@ Last Updated on \today
 \centering{
 \color{headings}
 \fontspec[Path = fonts/Serif/]{SourceHanSerif-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-% &{\includegraphics[width=2.8cm]{images/HANBEOMSEOK.eps}}
+\\[10pt]
 \noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
 \vspace{-15pt}
 }
@@ -82,5 +94,5 @@ Last Updated on \today
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\begin{itemize}\itemsep3pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
